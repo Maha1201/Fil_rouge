@@ -1,0 +1,13 @@
+
+Règles de gestion :
+
+
+1. Le coefficient de vente (coeff_client) est le même pour tous les clients particuliers.
+
+2. Le paiement se fait à la commande concernant les particuliers.
+
+3. Le numéro de commande est conservé 3 ans.
+
+4. Une commande expédiée même partiellement fait l’objet d’une facturation de l’ensemble de la commande.
+
+5. A chaque client est attribué un commercial. Un commercial spécifique s'occupe des clients particuliers.
