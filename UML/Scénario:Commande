@@ -1,0 +1,34 @@
+Scénario : Enregistrer une commande
+
+
+
+Flux principal : 
+
+1 - Le client demande l'affichage du panier
+Le système affiche le panier du client
+
+2 - Le client demande le check out du panier
+Le système affiche la page de check out
+
+3 - Le client entre choisis son mode de paiement
+Le système sélectionne le mode de paiement du client
+
+4 - Le client saisie ses données bancaires
+Le système affiche les informations
+
+5 - Le client vérifie ses coordonnées et valide le panier
+Le système enregistre la facture du client
+
+
+
+
+Flux alternatifs :
+
+1 - Le client n'est pas connecté
+Le système le renvoie vers la page de connexion
+
+1 - Il n'a pas de compte
+Le système le renvoie vers la page de création de compte
+
+5 - Le client n'a pas entré d'addresse de livraison/paiement
+Le système le renvoie vers la partie adresse de son profil
