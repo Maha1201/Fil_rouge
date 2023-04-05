@@ -31,12 +31,12 @@
                     <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
                         <li><a class="hover:text-rose-500" href="Index.html">Accueil</a></li>
                         <li><a class="hover:text-rose-500" href="Occasions.html">Occasions</a></li>
-                        <li><a class="hover:text-rose-500" href="#">Bouquets</a></li>
+                        <li><a class="hover:text-rose-500" href="Produit.html">Bouquets</a></li>
                         <li><a class="hover:text-rose-500" href="#">Contact</a></li>
                     </ul>
                     <!-- Header Icons -->
                     <div class="hidden xl:flex items-center space-x-5 items-center">
-                        <a class="flex items-center text-3xl hover:text-rose-500" href="#">
+                        <a class="flex items-center text-3xl hover:text-rose-500" href="Panier.html">
                             <i class='bx bx-cart'></i>
                         </a>
                         <!-- Se connecter/S'inscrire -->
@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <!-- Responsive navbar -->
-                <a class="xl:hidden flex mr-6 items-center text-2xl" href="#">
+                <a class="xl:hidden flex mr-6 items-center text-2xl" href="Panier.html">
                     <i class='bx bx-cart'></i>
                 </a>
                 <a class="navbar-burger self-center mr-12 xl:hidden text-2xl" href="#">
@@ -56,37 +56,40 @@
         </div>
     </div>
 
+    <!-- Panier -->
     <section>
-        <div>
+        <div class="">
             Vérifiez votre panier
         </div>
 
-
-        <div class="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
-            <div
-                class="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded-lg shadow-xl lg:flex-row sm:mx-auto">
-                <div class="relative lg:w-1/2">
-                    <img src="https://images.unsplash.com/photo-1523908511403-7fc7b25592f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80"
-                        alt="Persons talking in a work setting."
-                        class="object-cover w-full lg:absolute h-80 lg:h-full" />
-
-                    <!-- Coupure image -->
-                    <svg class="absolute top-0 right-0 hidden h-full text-white lg:inline-block" viewBox="0 0 20 104"
-                        fill="currentColor">
-                        <polygon points="17.3036738 5.68434189e-14 20 5.68434189e-14 20 104 0.824555778 104"></polygon>
-                    </svg>
+        <div class="flex flex-row">
+            <div class="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
+                <div
+                    class="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded-lg shadow-xl lg:flex-row sm:mx-auto">
+                    <div class="relative lg:w-1/2">
+                        <img src="https://cdn.shopify.com/s/files/1/0273/7415/7961/products/bouquet-de-pivoines-artificielles-rose_1200x1200.png?v=1615983423"
+                            alt="Image du produit" class="w-full h-80 lg:h-full" />
+                        <!-- Coupure image -->
+                        <svg class="absolute top-0 right-0 hidden h-full text-white lg:inline-block"
+                            viewBox="0 0 20 104" fill="currentColor">
+                            <polygon points="17.3036738 5.68434189e-14 20 5.68434189e-14 20 104 0.824555778 104">
+                            </polygon>
+                        </svg>
+                    </div>
+                    <div class="grid p-8 bg-white text-rose-700 lg:p-16 lg:pl-10 lg:w-1/2">
+                        <h5 class="mb-3 text-3xl font-extrabold sm:text-4xl">
+                            Bouquet de pivoines
+                        </h5>
+                        <p class="flex flex-col py-5 text-gray-800">
+                            <span class="text-2xl">85.26€</span>
+                            <a href="#"><span class="text-sm text-rose-300 underline">Supprimer</span></a>
+                        </p>
+                    </div>
                 </div>
-                <div class="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2">
-                    <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">
-                        Your Next Great Idea
-                    </h5>
-                    <p class="py-5 mb-5 text-gray-800">
-                        <span class="font-bold">Our Platform</span> will help you craft and build your next idea.
-                        Utilize our
-                        drag and
-                        drop components to build the application of your dreams.
-                    </p>
-                </div>
+            </div>
+
+            <div>
+                <span>Récapitulatif</span>
             </div>
         </div>
     </section>
