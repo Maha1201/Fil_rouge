@@ -62,7 +62,7 @@
         <div class="">
             <div class="flex justify-center text-rose-700 pt-10 pb-10">
                 <div class="inline-block shadow-lg bg-rose-50 p-8 px-32 m-4">
-                    <form action="#" method="post" id="formulaire_inscr">
+                    <form action="" method="post" id="formulaire_inscr">
                         <span class="text-3xl">Créer un compte</span>
                         <br><br><br>
 
@@ -72,16 +72,19 @@
                             <span id="nom_err"></span>
                             <br><br>
 
-                            <label for="prenom">Prénom : </label>
-                            <input type="text" id="prenom" class="rounded border-rose-300 border-2">
+                            <label for="prenom_inscr">Prénom : </label>
+                            <input type="text" id="prenom_inscr" class="rounded border-rose-300 border-2" required>
+                            <span id="prenom_err"></span>
                             <br><br>
 
-                            <label for="nom">Email : </label>
-                            <input type="text" id="nom" class="rounded border-rose-300 border-2">
+                            <label for="mail_inscr">Email : </label>
+                            <input type="text" id="mail_inscr" class="rounded border-rose-300 border-2" required>
+                            <span id="mail_err"></span>
                             <br><br>
 
-                            <label for="nom">Mot de passe : </label>
-                            <input type="text" id="nom" class="rounded border-rose-300 border-2">
+                            <label for="mdp_inscr">Mot de passe : </label>
+                            <input type="text" id="mdp_inscr" class="rounded border-rose-300 border-2" required>
+                            <span id="mdp_err"></span>
                             <br><br>
                         </div>
 
@@ -140,7 +143,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="Assets/script.js"></script>
+    <script src="Assets/scriptInscr.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 

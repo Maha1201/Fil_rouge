@@ -26,8 +26,7 @@ function validerConn(event) {
         mail_err.style.color = "orange";
     }
     else if (mail_connexion.validity.valueMissing == false) {
-        mail_err.textContent = "OK";
-        mail_err.style.color = "green";
+        mail_err.textContent = "";
     }
 
     //Vérification du mdp
@@ -37,31 +36,6 @@ function validerConn(event) {
         mdp_err.style.color = "red";
     }
     else if (mdp_connexion.validity.valueMissing == false) {
-        mdp_err.textContent = "OK";
-        mdp_err.style.color = "green";
-    }
-};
-
-
-// Vérification du formulaire d'inscription
-const inscr = document.getElementById("envoyerInscr");
-inscr.addEventListener("click", validerInscr);
-
-document.getElementById("formulaire_inscr").reset();
-
-let nom_inscr = document.getElementById("nom_inscr");
-let nom_err = document.getElementById("nom_err");
-
-function validerInscr(event) {
-
-    // Vérification du nom
-    if (nom_inscr.validity.valueMissing == true) {
-        event.preventDefault();
-        nom_err.textContent = "Saisissez un nom";
-        nom_err.style.color = "red";
-    }
-    else if (nom_inscr.validity.valueMissing == false) {
-        nom_err.textContent = "OK";
-        nom_err.style.color = "green";
+        mdp_err.textContent = "";
     }
 };
