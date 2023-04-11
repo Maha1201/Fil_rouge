@@ -62,17 +62,19 @@
         <div class="">
             <div class="flex justify-center text-rose-700 pt-8 pb-9">
                 <div class="inline-block shadow-lg bg-rose-50 p-8 px-32 m-4">
-                    <form action="">
+                    <form action="#" method="post" id="formulaire">
                         <span class="text-3xl">Se connecter</span>
                         <br><br><br>
 
                         <div class="flex flex-col">
-                            <label for="nom">Email : </label>
-                            <input type="text" id="nom" class="rounded border-rose-300 border-2">
+                            <label for="mail_connexion">Email : </label>
+                            <input type="text" id="mail_connexion" class="rounded border-rose-300 border-2" required>
+                            <span id="mail_err"></span>
                             <br><br>
 
-                            <label for="nom">Mot de passe : </label>
-                            <input type="text" id="nom" class="rounded border-rose-300 border-2">
+                            <label for="mdp_connexion">Mot de passe : </label>
+                            <input type="text" id="mdp_connexion" class="rounded border-rose-300 border-2" required>
+                            <span id="mdp_err"></span>
                             <div>
                                 <a href="Recup_Mdp.html"
                                     class="flex justify-end text-sm text-rose-400 hover:underline">Mot de passe
@@ -82,7 +84,7 @@
                         </div>
 
                         <div class="flex justify-center">
-                            <input type="submit" value="Se connecter"
+                            <input type="submit" value="Se connecter" id="envoyer"
                                 class=" block text-rose-50 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-600 px-5 py-2 rounded-full">
                             <a href="Inscription.html"
                                 class="ml-6 block text-rose-800 inline-block mt-0 hover:text-rose-800 bg-rose-300 hover:bg-white px-5 py-2 rounded-full">Je
@@ -136,8 +138,10 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="Assets/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 
 </body>
 

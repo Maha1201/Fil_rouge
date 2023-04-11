@@ -62,17 +62,18 @@
         <div class="">
             <div class="flex justify-center text-rose-700 pt-10 pb-10">
                 <div class="inline-block shadow-lg bg-rose-50 p-8 px-32 m-4">
-                    <form action="">
+                    <form action="#" method="post" id="formulaire_inscr">
                         <span class="text-3xl">Créer un compte</span>
                         <br><br><br>
 
                         <div class="flex flex-col">
-                            <label for="nom">Nom : </label>
-                            <input type="text" id="nom" class="rounded border-rose-300 border-2">
+                            <label for="nom_inscr">Nom : </label>
+                            <input type="text" id="nom_inscr" class="rounded border-rose-300 border-2" required>
+                            <span id="nom_err"></span>
                             <br><br>
 
-                            <label for="nom">Prénom : </label>
-                            <input type="text" id="nom" class="rounded border-rose-300 border-2">
+                            <label for="prenom">Prénom : </label>
+                            <input type="text" id="prenom" class="rounded border-rose-300 border-2">
                             <br><br>
 
                             <label for="nom">Email : </label>
@@ -85,7 +86,7 @@
                         </div>
 
                         <div class="flex justify-center">
-                            <input type="submit" value="Créer"
+                            <input type="submit" value="Créer" id="envoyerInscr"
                                 class="px-12 block text-rose-50 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-600 px-5 py-2 rounded-full">
                             <a href="Connexion.html"
                                 class="ml-6 block text-rose-700 inline-block mt-0 hover:text-rose-600 bg-rose-300 hover:bg-white px-5 py-2 rounded-full">Se
@@ -139,6 +140,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="Assets/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 

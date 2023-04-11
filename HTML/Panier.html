@@ -57,15 +57,16 @@
     </div>
 
     <!-- Panier -->
-    <section>
-        <div class="">
+    <section class="text-rose-700">
+        <div class="ml-48 text-3xl p-8">
             Vérifiez votre panier
         </div>
 
-        <div class="flex flex-row">
-            <div class="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
+        <div class="grid grid-cols-2 gap-10 divide-x">
+            <div class="px-4 py-12 ml-48">
+                <!--Etait dans la div du dessus : sm:max-w-xl md:max-w-full lg:max-w-screen-md md:px-24 lg:px-8 lg:py-16-->
                 <div
-                    class="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded-lg shadow-xl lg:flex-row sm:mx-auto">
+                    class="flex flex-col max-w-screen-md overflow-hidden bg-white border rounded-lg shadow-xl lg:flex-row sm:mx-auto">
                     <div class="relative lg:w-1/2">
                         <img src="https://cdn.shopify.com/s/files/1/0273/7415/7961/products/bouquet-de-pivoines-artificielles-rose_1200x1200.png?v=1615983423"
                             alt="Image du produit" class="w-full h-80 lg:h-full" />
@@ -76,11 +77,11 @@
                             </polygon>
                         </svg>
                     </div>
-                    <div class="grid p-8 bg-white text-rose-700 lg:p-16 lg:pl-10 lg:w-1/2">
-                        <h5 class="mb-3 text-3xl font-extrabold sm:text-4xl">
+                    <div class="grid p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2">
+                        <h5 class="mb-3 text-xl font-extrabold sm:text-2xl">
                             Bouquet de pivoines
                         </h5>
-                        <p class="flex flex-col py-5 text-gray-800">
+                        <p class="flex flex-col py-5 text-rose-500">
                             <span class="text-2xl">85.26€</span>
                             <a href="#"><span class="text-sm text-rose-300 underline">Supprimer</span></a>
                         </p>
@@ -89,7 +90,28 @@
             </div>
 
             <div>
-                <span>Récapitulatif</span>
+                <div class="ml-10">
+                    <div class="font-semibold text-2xl mb-10">Récapitulatif</div>
+                    <div class="flex flex-row w-64 justify-between mb-10">
+                        <div>Nom du produit</div>
+                        <div class="text-rose-500">52.03€</div>
+                    </div>
+
+                    <hr class="border-rose-700 w-64">
+
+                    <div class="flex flex-row w-64 justify-between">
+                        <div class="font-semibold">Total</div>
+                        <div class="font-semibold text-rose-500">52.03€</div>
+                    </div>
+
+                    <div class="mt-10">
+                        <a href="#"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-rose-700 rounded-lg hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Valider la commande
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
